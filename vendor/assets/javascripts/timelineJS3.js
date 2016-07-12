@@ -3665,27 +3665,7 @@ TL.Language = function(options) {
 	}
 	if (options && options.language && typeof(options.language) == 'string' && options.language != 'en') {
 		var code = options.language;
-		if (!(code in TL.Language.languages)) {
-			if (/\.json$/.test(code)) {
-				var url = code;
-			} else {
-				var fragment = "/locale/" + code + ".json";
-				var script_path = options.script_path || TL.Timeline.source_path;
-				if (/\/$/.test(script_path)) { fragment = fragment.substr(1)}
-				var url = script_path + fragment;
-			}
-			var self = this;
-			var xhr = TL.ajax({
-				url: url, async: false
-			});
-			if (xhr.status == 200) {
-				TL.Language.languages[code] = JSON.parse(xhr.responseText);
-			} else {
-				throw "Could not load language [" + code + "]: " + xhr.statusText;
-			}
-		}
 		TL.Util.mergeData(this,TL.Language.languages[code]);
-
 	}
 }
 
