@@ -2,7 +2,7 @@ module TimelineJS3
   module Rails
     class Engine < ::Rails::Engine
       initializer 'timelineJS3.assets.precompile' do |app|
-        %w(stylesheets javascripts icons).each do |sub|
+        %w(stylesheets javascripts timelineJS3/locale timelineJS3/icons).each do |sub|
           app.config.assets.paths << root.join('assets', sub).to_s
         end
 
