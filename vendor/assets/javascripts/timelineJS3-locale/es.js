@@ -64,7 +64,7 @@ TL.Language.languages["es"] = {
     "dateformats": {
         "full": "d mmmm yyyy", 
         "full_long": "dddd',' d mmm yyyy HH:MM", 
-        "full_long_small_date": "HH:MM'<br/><small>d mmm yyyy'</small>'"
+        "full_long_small_date": "HH:MM'<br/><small>d mmm yyyy'</small>'",
         "full_short": "d mmm", 
         "month": "mmmm yyyy", 
         "month_short": "mmm",
