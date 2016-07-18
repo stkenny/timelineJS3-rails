@@ -62,15 +62,17 @@ TL.Language.languages["es"] = {
         "loading_timeline": "La cronología esta cargando"
     }, 
     "dateformats": {
-        "full_long": "dddd',' d mmm yyyy HH:MM", 
-        "full_short": "d mmm", 
         "full": "d mmmm yyyy", 
-        "month_short": "mmm", 
-        "time_no_seconds_small_date": "'<small>'d mmmm yyyy'</small>' HH:MM", 
+        "full_long": "dddd',' d mmm yyyy HH:MM", 
+        "full_long_small_date": "HH:MM'<br/><small>d mmm yyyy'</small>'"
+        "full_short": "d mmm", 
         "month": "mmmm yyyy", 
+        "month_short": "mmm",
+        "time": "'<small>'d mmmm yyyy'</small>' HH:MM:ss",
+        "time_no_minutes_short": "HH",
+        "time_no_seconds_small_date": "'<small>'d mmmm yyyy'</small>' HH:MM", 
         "time_no_seconds_short": "HH:MM", 
         "time_short": "HH:MM:ss", 
-        "year": "yyyy", 
-        "full_long_small_date": "HH:MM'<br/><small>d mmm yyyy'</small>'"
+        "year": "yyyy"
     }
 }
