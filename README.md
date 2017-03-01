@@ -20,14 +20,14 @@ Add the Javascript to `application.js`:
 
 
 ```javascript
-//=require timelineJS3/timeline
+//=require timelineJS3
 ```
 
 Add the CSS to `application.css`
 
 ```css
 /*
- *= require timelineJS3/timeline
+ *= require timelineJS3
  */
 ```
 
